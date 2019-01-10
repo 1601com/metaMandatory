@@ -1,0 +1,34 @@
+{
+  "name": "agentur1601com/metaMandatory",
+  "description": "Set page and file meta fields to mandatory",
+  "type": "contao-module",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name"    : "Lukas Beck",
+      "email"   : "lb@1601.com",
+      "homepage"  : "https://github.com/LBeckX"
+    }
+  ],
+  "require": {
+    "contao/core-bundle":"^4.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "master": "0.1.x-dev"
+    },
+    "contao-manager-plugin": "agentur1601com\\metaMandatory\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "agentur1601com\\metaMandatory\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/"
+    ]
+  }
+}

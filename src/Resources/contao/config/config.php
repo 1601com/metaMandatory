@@ -32,8 +32,6 @@ class ContentClass
     {
         if($objElement->imageTitle === "*" || $objElement->imageTitle === "FooBar" || $objElement->alt === "*" || $objElement->alt === "FooBar")
         {
-            $objElement->imageTitle = "";
-            $objElement->alt = "";
             $strBuffer = str_replace(['title="*"','title="FooBar"','alt="*"','alt="FooBar"'],['title=""','title=""','alt=""','alt=""'],$strBuffer);
         }
 

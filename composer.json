@@ -1,6 +1,6 @@
 {
-  "name": "agentur1601com/metaMandatory",
-  "description": "Set page and file meta fields to mandatory",
+  "name": "agentur1601com/meta-mandatory",
+  "description": "Change page and file meta fields to mandatory",
   "type": "contao-module",
   "license": "LGPL-3.0+",
   "authors": [

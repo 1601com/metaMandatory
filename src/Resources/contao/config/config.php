@@ -1,8 +1,8 @@
 <?php
-
 // config.php
 
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('LayoutClass', 'modifiedPageLayout');
+
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('ContentClass', 'modifiedImages');
 
 class LayoutClass

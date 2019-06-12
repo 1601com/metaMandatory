@@ -15,7 +15,7 @@
   },
   "extra": {
     "branch-alias": {
-      "master": "0.1.x-dev"
+      "master": "0.2.x-dev"
     },
     "contao-manager-plugin": "agentur1601com\\metaMandatory\\ContaoManager\\Plugin"
   },

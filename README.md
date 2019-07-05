@@ -1,11 +1,15 @@
 # metaMandatory
 
-`$ composer require agentur1601com/metaMandatory`
+`$ composer require agentur1601com/meta-mandatory`
 
 ---
 
-Ändert die Eingabefelder für Seitentitel und Beschreibung auf Pflichtfelder.
-Weiterhin muss man nun bei Bildern, wenn diese in Contao BE geändert werden, auch
-einen Titel und eine Beschreibung hinterlegen.
+Folgende Eingabefelder werden zu Pflichtfelder:
 
-Durch das Eingeben von `*` oder `FooBar` kann man das Pflichtfeld umgehen
+- Seitentitel
+- Seitenbeschreibung
+- Bildtitel
+- Bild Alternativtext
+
+Über die Checkbox im Bereich 'Backend-Einstellungen' (Einstellungen)
+kann man die Pflichtfelder deaktivieren.

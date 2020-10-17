@@ -1,12 +1,20 @@
 <?php
 
-namespace agentur1601com\metaMandatory\ContaoManager;
+/*
+ * This file is part of meta-mandatory-bundle.
+ *
+ * (c) Agentur1601com
+ *
+ * @license LGPL-3.0-or-later
+ */
 
+namespace Agentur1601com\MetaMandatory\ContaoManager;
+
+use Agentur1601com\MetaMandatory\MetaMandatoryBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
-use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
-use agentur1601com\metaMandatory\metaMandatoryBundle;
+use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 
 class Plugin implements BundlePluginInterface
 {
@@ -16,8 +24,8 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(metaMandatoryBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class])
+            BundleConfig::create(MetaMandatoryBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }

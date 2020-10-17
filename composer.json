@@ -1,34 +1,38 @@
 {
   "name": "agentur1601com/meta-mandatory",
+  "type": "contao-bundle",
   "description": "Change page and file meta fields to mandatory",
-  "type": "contao-module",
-  "license": "LGPL-3.0+",
+  "homepage": "https://1601.com",
+  "license": "LGPL-3.0-or-later",
   "authors": [
     {
-      "name"    : "Lukas Beck",
+      "name": "Lukas Beck",
       "email"   : "lb@1601.com",
-      "homepage"  : "https://github.com/LBeckX"
+      "homepage": "https://github.com/LBeckX"
+    },
+    {
+      "name": "Frank Ficzak",
+      "homepage": "https://github.com/ff1601com"
     }
   ],
   "require": {
-    "contao/core-bundle":"^4.1"
+    "php": "^5.6 || ^7.0",
+    "contao/core-bundle": "4.*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.12"
   },
   "extra": {
-    "branch-alias": {
-      "master": "0.3.x-dev"
-    },
-    "contao-manager-plugin": "agentur1601com\\metaMandatory\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "Agentur1601com\\MetaMandatory\\ContaoManager\\Plugin"
   },
   "autoload": {
     "psr-4": {
-      "agentur1601com\\metaMandatory\\": "src/"
-    },
-    "classmap": [
-      "src/Resources/contao/"
-    ],
-    "exclude-from-classmap": [
-      "src/Resources/contao/config/",
-      "src/Resources/contao/dca/"
-    ]
+      "Agentur1601com\\MetaMandatory\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Agentur1601com\\MetaMandatory\\Tests\\": "tests/"
+    }
   }
 }
